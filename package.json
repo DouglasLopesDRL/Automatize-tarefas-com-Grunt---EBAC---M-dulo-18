@@ -1,0 +1,15 @@
+{
+  "name": "automatize-tarefas-com-grunt",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^1.6.2",
+    "grunt-contrib-less": "^3.0.0"
+  }
+}
