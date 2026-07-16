@@ -18,6 +18,7 @@ body{
     h1{
         font-size: 4em;
         font-family: @fonteSecundaria;
+        margin-bottom: 20px;
     }
 }
 
@@ -50,20 +51,21 @@ main{
         height: 50px;
         background-color: transparent;
         border: none;
-        border-bottom: 2px solid @corDosTextos;
+        border-bottom: 4px solid @corDosTextos;
         color: @corDosTextos;
     }
     
     button{
         background-color: @corDoBotao;
-        color: #000;
-        border: 1px solid #000;
+        color: @corDosTextos;
+        border: 2px solid @corDosTextos;
         border-radius: 10px;
         padding: 1em 2em;
         font-size: 2em;
         font-family: @fontePrincipal;
         font-weight: bold;
         cursor: pointer;
+        margin-top: 10px;
 
         &:hover{
             background-color: darken(@corDoBotao, 10%);
