@@ -1,0 +1,87 @@
+@corDeFundo: #c23616;
+@corDoBotao: #e84118;
+@corDosTextos: #dcdde1;
+@fontePrincipal: "Roboto", sans-serif;
+@fonteSecundaria: "Lobster", sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: @fontePrincipal;
+    background-color: @corDeFundo;
+    color: @corDosTextos;
+
+    h1{
+        font-size: 4em;
+        font-family: @fonteSecundaria;
+    }
+}
+
+main{
+    margin: 0 auto;
+    max-width: 767px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    text-align: center;
+
+    label{
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    input{
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+        max-width: 100px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid @corDosTextos;
+        color: @corDosTextos;
+    }
+    
+    button{
+        background-color: @corDoBotao;
+        color: #000;
+        border: 1px solid #000;
+        border-radius: 10px;
+        padding: 1em 2em;
+        font-size: 2em;
+        font-family: @fontePrincipal;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover{
+            background-color: darken(@corDoBotao, 10%);
+        }
+    }
+}
+
+.resultado{
+    display: none;
+    margin-top: 40px;
+    padding: 40px 50px;
+    align-items: center;
+    font-family: @fontePrincipal;
+    font-size: 2em;
+    font-weight: bold;
+    border: 4px dashed @corDosTextos;
+
+    span{
+        margin-left: 10px;
+    }
+}
