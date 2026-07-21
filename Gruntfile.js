@@ -23,6 +23,10 @@ module.exports = function(grunt) {
                         {
                             match: 'ENDERECO_DO_CSS',
                             replacement: './styles/main.css'
+                        },
+                        {
+                            match: 'ENDERECO_DO_JS',
+                            replacement: '../src/scripts/main.js'
                         }
                     ]
                 },
@@ -73,6 +77,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('default', ['less:development']);
+    grunt.registerTask('default', ['less:development', 'replace:dev']);
     grunt.registerTask('build', ['less:production', 'htmlmin:dist', 'replace:dist', 'clean']);
 }
