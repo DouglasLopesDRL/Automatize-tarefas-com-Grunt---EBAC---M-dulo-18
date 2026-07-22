@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // 5. PUSH: Adiciona o número único validado na lista
             listaNumeros.push(numAleatorio);
             // 6. Atualiza a interface (DOM)
-            document.getElementById('texto-sorteado').innerText = "Número sorteado: ";
+            document.getElementById('texto-sorteado').innerText = "O número sorteado foi o: ";
             document.querySelector('.resultado').style.display = 'flex';
             document.getElementById('numero-sorteado').innerText = numAleatorio;
         }
